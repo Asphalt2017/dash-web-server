@@ -1,0 +1,30 @@
+# Dashboard Configuration Example (YAML)
+# Save as config.yaml and load with:
+#   python -m web-dashboard.app --setting config.yaml
+# Or set environment variable:
+#   export DASH_SETTING=/path/to/config.yaml
+
+# Backend API Configuration
+backend_url: http://localhost:8000
+api_version: v1
+
+# Server Configuration
+debug: false
+host: 0.0.0.0
+port: 8100
+
+# API Timeouts (seconds)
+health_check_timeout: 5.0
+analyze_timeout: 30.0
+
+# Image Processing
+max_image_size_mb: 10
+supported_formats:
+  - jpg
+  - jpeg
+  - png
+  - webp
+
+# Application Settings
+enable_cors: true
+log_level: INFO

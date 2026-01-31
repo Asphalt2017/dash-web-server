@@ -1,0 +1,20 @@
+# Development dependencies for Python 3.13
+-r requirements.txt
+
+# Pre-commit and code quality tools
+pre-commit>=4.0.1
+black>=24.10.0
+isort>=5.13.2
+ruff>=0.8.4
+mypy>=1.13.0
+bandit[toml]>=1.7.10
+pydocstyle>=6.3.0
+
+# Testing
+pytest>=8.3.4
+pytest-cov>=6.0.0
+pytest-asyncio>=0.25.2
+
+# Type stubs
+types-pyyaml>=6.0.12.20240917
+types-requests>=2.32.0.20241016
